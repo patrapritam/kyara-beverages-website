@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Drink Images</title>
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f3f4f6;
+        }
+        h1 {
+            color: #1e40af;
+            margin-bottom: 2rem;
+        }
+        .canvas-container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        canvas {
+            border: 2px solid #e5e7eb;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Generating Drink Images...</h1>
+    <div class="canvas-container">
+        <canvas id="drink1"></canvas>
+        <canvas id="drink2"></canvas>
+        <canvas id="drink3"></canvas>
+    </div>
+    <script src="assets/js/generate-images.js"></script>
+</body>
+</html> 

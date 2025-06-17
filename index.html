@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyara Beverages - Refreshment Reimagined</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-['Poppins'] bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center h-20">
+        <a href="#" class="text-3xl font-['Playfair_Display'] font-bold text-blue-600">Kyara</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link text-gray-600 hover:text-blue-600">Home</a>
+          <a href="#about" class="nav-link text-gray-600 hover:text-blue-600">About</a>
+          <a href="#products" class="nav-link text-gray-600 hover:text-blue-600">Products</a>
+          <a href="#contact" class="nav-link text-gray-600 hover:text-blue-600">Contact</a>
+        </div>
+        <button class="md:hidden text-gray-600 hover:text-blue-600">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 opacity-90"></div>
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center mix-blend-overlay"></div>
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="text-center text-white animate-fade-in">
+        <h1 class="text-5xl md:text-7xl font-['Playfair_Display'] font-bold mb-6">
+          Refreshment,<br>Reimagined
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+          Discover our innovative range of millet-based fruit drinks that blend tradition with modern wellness.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#products" class="btn-primary bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg">
+            Explore Our Drinks
+          </a>
+          <a href="#about" class="btn-secondary border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50 to-transparent"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] font-bold mb-6 text-gray-800">
+            Our Story
+          </h2>
+          <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <p class="text-lg text-gray-600 leading-relaxed">
+              At Kyara Beverages, we're reimagining refreshment with millet-based fruit drinks. 
+              Rooted in tradition and powered by innovation, we're on a mission to craft drinks 
+              that are nutritious, refreshing, and real.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              Our journey began with a simple idea: to create beverages that not only taste great 
+              but also contribute to your well-being. Using ancient grains and modern techniques, 
+              we've created a range of drinks that are both delicious and nourishing.
+            </p>
+          </div>
+          <div class="relative">
+            <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-xl">
+              <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Kyara Beverages" class="object-cover w-full h-full">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-24 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] font-bold mb-6 text-gray-800">
+          Our Signature Drinks
+        </h2>
+        <div class="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Discover our range of innovative beverages, crafted with care and natural ingredients.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Product 1 -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Kyara Sparkling Water" class="w-full h-80 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-['Playfair_Display'] font-bold mb-3">Kyara Sparkling Water</h3>
+            <p class="text-gray-600 mb-6">A crisp and refreshing sparkling water infused with natural minerals and subtle fruit essence.</p>
+            <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700">
+              Learn More
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Kyara Citrus Blast" class="w-full h-80 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-['Playfair_Display'] font-bold mb-3">Kyara Citrus Blast</h3>
+            <p class="text-gray-600 mb-6">A zesty citrus blend that invigorates with a burst of tangy flavor and natural sweetness.</p>
+            <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700">
+              Learn More
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card bg-white rounded-2xl overflow-hidden shadow-lg">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Kyara Tropical Breeze" class="w-full h-80 object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-['Playfair_Display'] font-bold mb-3">Kyara Tropical Breeze</h3>
+            <p class="text-gray-600 mb-6">A sweet and exotic mix of tropical fruits that will transport you to paradise with every sip.</p>
+            <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700">
+              Learn More
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-['Playfair_Display'] font-bold mb-6 text-gray-800">
+            Get in Touch
+          </h2>
+          <div class="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Have questions about our products? We'd love to hear from you.
+          </p>
+        </div>
+        <form class="space-y-6">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-gray-700 font-medium mb-2" for="name">Name</label>
+              <input type="text" id="name" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your Name">
+            </div>
+            <div>
+              <label class="block text-gray-700 font-medium mb-2" for="email">Email</label>
+              <input type="email" id="email" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your Email">
+            </div>
+          </div>
+          <div>
+            <label class="block text-gray-700 font-medium mb-2" for="message">Message</label>
+            <textarea id="message" rows="4" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn-primary w-full bg-blue-600 text-white px-6 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div class="col-span-1 md:col-span-2">
+          <h3 class="text-3xl font-['Playfair_Display'] font-bold mb-4">Kyara</h3>
+          <p class="text-gray-400 mb-6">Refreshment, Reimagined</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Kyara</h3>
+          <p class="text-gray-400">Refreshment, Reimagined</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+            <li><a href="#products" class="text-gray-400 hover:text-white">Products</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+          <p class="text-gray-400">Email: careers@kyarabeverages.in</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2024 Kyara Beverages. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
